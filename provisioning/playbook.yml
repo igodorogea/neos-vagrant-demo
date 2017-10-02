@@ -1,0 +1,18 @@
+---
+- hosts: all
+  become: true
+
+  # roles:
+    # - common
+    # - mariadb
+    # # install PHP 7.1
+    # - php-fpm
+    # - nginx
+    # - role: neos
+    #   neos_domain_name: 'neos-demo-vagrant.loc'
+    #   neos_root: 'neos-demo-vagrant'
+    #   # neos_root_mode: clean
+    #   neos_db_user: 'neos_vg_user'
+    #   neos_db_password: 'pass1234'
+    #   neos_db_name: 'neos_vg_db'
+    #   # neos_db_mode: clean
