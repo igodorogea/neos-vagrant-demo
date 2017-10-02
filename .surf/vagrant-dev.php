@@ -8,11 +8,12 @@
     $node->setOption('username', 'www-data');
 
     $application = new \TYPO3\Surf\Application\TYPO3\Neos();
-    $application->setDeploymentPath('/var/www/neos-vagrant-remote');
     $application->setContext('Production');
-    
+    $application->setDeploymentPath('/var/www/neos-vagrant-remote');
+    $application->setOption('repositoryUrl', 'https://github.com/igodorogea/neos-vagrant-demo.git');
+
     $application->setOption('transferMethod', 'rsync');
-    $application->setOption('packageMethod', 'rsync');
+    $application->setOption('packageMethod', 'git');
     // $application->setOption('updateMethod', NULL);
     
     $application->setOption('keepReleases', 5);
